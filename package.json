@@ -24,7 +24,14 @@
   },
   "homepage": "https://github.com/flylxz/excel-pure-js#readme",
   "private": true,
-  "browserslist": "> 0.25%, not dead",
+  "browserslist": {
+    "production": [
+      "> 0.25%, not dead"
+    ],
+    "development": [
+      "last 3 chrome version"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
@@ -46,6 +53,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.8.7"
+    "@babel/polyfill": "^7.8.7",
+    "normalize.css": "^8.0.1"
   }
 }
